@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    {% load static %}
+    <!--引入css-->
+    <link rel="stylesheet" href="{% static 'css/mycss.css' %}">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+    <!--引入js-->
+    <!--<script type="text/javascript" src="{%static 'scripts/myjs.js'%}"></script>-->
+</head>
+<body>
+    <video id="video" width="500" height="400" autoplay></video>
+    <canvas id="canvas" width="500" height="400"></canvas>
+    <button id="snap" style="width:500px;height:30px;font-size:24px;">拍照并检测</button>
+    <button onclick="clickme()">点我一下</button>
+    <br>
+    <label style="color:blue">{{ success_msg }}</label>
+    <label style="color:blue">{{ score }}</label>
+</body>
+<script type="text/javascript" src="{%static 'scripts/myjs.js'%}"></script>
+</html>
