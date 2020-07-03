@@ -20,5 +20,5 @@ from app import views as vs
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('app/index/',vs.index),
-    path('app/upload_image/',vs.upload_image),
+    path('app/ajax/upload_image/',vs.upload_image),
 ]
